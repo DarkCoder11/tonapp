@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "alwaysStrict": true,
+      "noUnusedParameters": true,
+      "experimentalDecorators":true,
+      "moduleResolution": "node",
+      "outDir": ".dist",
+      "typeRoots" : ["./src/types", "./node_modules/@types"],
+      "baseUrl": ".",
+      "plugins": [
+        {
+          "transform": "@zerollup/ts-transform-paths"
+        }
+      ]
+    },
+    "exclude": [
+      "./node_modules"
+    ],
+    "include": [
+      "**/*.ts",
+      "**/*.tsx"
+    ]
+  }
